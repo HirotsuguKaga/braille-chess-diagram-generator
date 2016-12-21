@@ -1,0 +1,25 @@
+<!DOCTYPE html><html><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" href="a.css">
+<style>
+@font-face {
+    font-family: 'Ikarashi Braille';
+    src: local('Ikarashi Braille'), 
+    src: url('ikarashi.ttf');
+}
+</style>
+<h1>CHESS TACTILE DIAGRAM</h1>
+<input type="file" id="getfile" accept=".fen,.txt" multiple="multiple">　<br><br>
+<a href="javascript:void(0)" download="" id="edl">EDLファイルをダウンロード</a>　
+<a href="javascript:void(0)" download="" id="png">立体コピー用画像をダウンロード</a>　
+<a href="javascript:void(0)" download="" id="esa">PNG画像をダウンロード</a><br>
+<p id="title"></p>
+<pre id="before" ></pre>
+<canvas id="a" width="599" height="744"></canvas>
+<img id="image" width="100%"><canvas id="cvs" width="1654" height="2339" style="display:none;"></canvas>
+<br>
+Powerd by <a href="https://github.com/HirotsuguKaga/tactileGraph.js">tactileGraph.js</a>
+
+
+<script type="text/javascript" src="encoding.js"></script>
+<script type="text/javascript" src="tactileGraph.js"></script>
+<script type="text/javascript" src="chess.js"></script>
+</html>
